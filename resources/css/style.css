@@ -1,0 +1,66 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    margin:24px 20px 0px 20px;
+}
+
+/* Header Sectiont styling*/
+.header-container{
+    display: flex;
+    border:solid 2px red;
+    align-items: center;
+    margin-bottom: 24px;
+   
+}
+.header-container .img{
+    height: 30px;
+}
+.links{
+    flex-basis: 100%;
+    border:solid 2px blue;
+    text-align: right;
+   
+}
+.links-item{
+    padding:20px;
+    
+}
+/* -------------------------------------------------  */
+
+/* Body Section 1 Styling */
+.body-container-1{
+    display: flex;
+    border:solid 2px red;
+    flex-basis: 100%;
+    height:300px;
+    
+}
+.item-1-contents{
+    border:solid 2px blue;
+    flex-basis: 50%;
+    float: right;
+
+}
+.item-2-contents{
+    border:solid 2px blue;
+    flex-basis:80%;
+    
+
+}
+.item-2-contents img{
+    width:100%;
+    height:300px;
+}
+#submit{
+    height: 25px;
+    width:150px;
+    text-align:center;
+    background-color: blue;
+    color:white;
+}
+#text{
+    margin-right:15px;
+    width:200px;
+    height: 25px;
