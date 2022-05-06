@@ -14,11 +14,10 @@ h1{
     font-weight: bold;
 }
 
-/* Header Sectiont styling*/
+/* Header Section styling*/
 .header-container{
     display: flex;
-    margin:24px 20px 0px 20px;
-    
+    margin:24px 50px 0px 50px;
     align-items: center;
     margin-bottom: 24px;
    
@@ -34,6 +33,8 @@ h1{
 }
 .links-item{
     padding:20px;
+    text-decoration: none;
+    color: black;
     
 }
 /* -------------------------------------------------  */
@@ -41,7 +42,7 @@ h1{
 /* Body Section 1 Styling */
 .body-container-1{
     display: flex;
-    margin:24px 20px 0px 20px;
+    margin:24px 50px 0px 50px;
     flex-basis: 100%;
     height:300px;
     margin-bottom: 24px;
@@ -96,7 +97,7 @@ h1{
 /* Styling Body content 2*/
 .body-container-2{
     display:flex;
-    margin:24px 20px 0px 20px;
+    margin:24px 0px 0px 0px;
     background-image: url('../images/bg-curve-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,12 +109,14 @@ h1{
 .container-2-contents-1{
     flex-basis: 40%;
     padding-top: 50px;
+    margin-left:50px;
 }
 
 .container-2-contents-2{
     
     flex-basis:60%;
     padding-top: 50px;
+    margin-right:50px;
 }
 .container-2-contents-2 img{
     width: 100%;
@@ -133,8 +136,17 @@ h1{
     align-items: center;
 
 }
+.img-box p{
+    padding-left:10px; 
+}
 .body-container-2-item .about .img-box span{
     font-weight: bolder;
+   
+}
+
+.body-container-2-item .about .img-box p{
+    font-size: 14px;
+
 }
 .body-container-2-item .about img{
     
@@ -149,8 +161,15 @@ h1{
 }
 .container-2-contents-1 a{
     color:green;
+    text-decoration: none;
+    border-bottom: solid 2px green;
 
 }
+
+.container-2-contents-1 ,.fylolink{
+    padding-top:15px
+}
+
 .container-2-contents-1 a:hover{
     opacity: 0.5;
 }
@@ -229,6 +248,7 @@ h1{
 
  .footer-container .container-item-1{
     margin-top: 50px;
+    text-align: left;
 }
 
 
@@ -262,18 +282,51 @@ h1{
 
 
  /* -Mobile Responsive styling*/
-@media screen and (max-width:700px){
+
+ /*styling header for mobile*/
+@media screen and (max-width:480px){
+    .header-container .links .links-item{
+        font-size: 16px;
+        flex-shrink:1;
+    }
+}
+
+
+ /*styling container 1 for mobile*/
+@media screen and (max-width:480px){
     .body-container-1{
         flex-direction: column;
-        border: solid 2px red;
+        height:auto;
+        margin-top:50px;
+        flex-wrap:wrap;
+
     }
     .item-1-contents{
-        border: solid 2px rgb(0, 255, 106);
-        order:2;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        order: 2;
+       
     }
+
+    .item-1-contents h1{
+        text-align: center;
+      
+    }
+    .item-1-contents #input-cont{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .item-1-contents #submit, #email{
+        margin-top: 15px;
+        margin-right:0px;
+        width:250px;
+        align-self: center;
+        
+    }
+
     
     .item-2-contents{
-        border: solid 2px rgb(179, 255, 0);
         flex-basis:80%;
         margin-bottom: 20px;
     }
@@ -282,16 +335,17 @@ h1{
 /*--------------------------------------*/
 
 /*styling container 2 for mobile*/
-@media screen and (max-width:700px){
+@media screen and (max-width:480px){
     .body-container-2{
         flex-direction: column;
         background-image: url('../images/bg-curve-mobile.svg');
-        margin-top:350px;
+        margin-top:50px;
         height: 100%;
+        flex-wrap:wrap;
     
     }
     .container-2-contents-1{
-        order:1;
+        order:1
     }
     .container-2-contents-1 h1{
         text-align:center;
@@ -302,7 +356,7 @@ h1{
     }
 
     .body-container-2-item .fylolink{
-        margin:50px 0 50px;
+        margin:30px 0 50px;
         text-align: center;
     }
 }
@@ -311,7 +365,7 @@ h1{
 
 
 /*styling container 3 for mobile*/
-@media screen and (max-width:700px){
+@media screen and (max-width:480px){
     .body-container-3{
         flex-direction: column;
         height:400px;
@@ -321,8 +375,8 @@ h1{
         height:auto;
     }
 
-    .container-3-contents-1{
-        margin-left:0px; 
+    .container-3-contents-1 p{
+        margin:0px 15px; 
     }
     .container-3-contents-2{
         padding-left: 0px;
@@ -346,7 +400,7 @@ h1{
 /*--------------------------------------*/
  
 /*styling footer for mobile*/
-@media screen and (max-width:700px){
+@media screen and (max-width:480px){
     .footer-container{
         flex-direction: column;
         align-items: flex-start;
@@ -361,7 +415,7 @@ h1{
     }
     .footer-container .container-item-1{
         margin-left:20px;
-        text-align: left;
+        
     }
     .footer-container-item #logo{
         padding-bottom: 20px;
