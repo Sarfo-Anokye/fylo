@@ -4,6 +4,7 @@
         <title>
 
         </title>
+        <script src="https://kit.fontawesome.com/d787293a74.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./resources/css/style.css">
         
     </head>
@@ -12,9 +13,9 @@
         <header class="header-container">
             <img class="img header-item"src="resources/images/logo.svg">
             <div class="links header-item">
-                <a class="Features links-item">Features</a>
-                <a class="team links-item " >Team</a>
-                <a class="signin links-item ">Sign in</a>
+                <a href="" class="Features links-item">Features</a>
+                <a href="" class="team links-item " >Team</a>
+                <a href="" class="signin links-item ">Sign in</a>
             </div>
         </header>
         <!--End of header Section-->
@@ -27,8 +28,9 @@
                 <h1>All your files in one Secure<br> location, accessible anywhere.</h1>
                 <p>fylo stores your most important files in one secure location. Access<br>
                 them wherever you need, share and collaborate with friends, family,<br> and co-workers</p>
-                <p><input id="text" type="text">
+                <p><input id="email" type="email" placeholder="Enter youe email...">
                 <input id="submit" type="submit" value="Get Started"></p>
+                <p id="error" >please check your email</p>
 
             </div>
             <div class="body-container-1-item item-2-contents">
@@ -48,7 +50,7 @@
                     covered for all of your file storage needs.</p>
                     <p>Securely share files and folders with friends, family and colleagues for<br>
                     live collarboration. No email attachments required</p>
-                    <p><a href="">see how fylo works</a></p>
+                    <p class="fylolink"><a  href="">see how fylo works<img src="./resources/images/icon-arrow.svg"> </a></p>
                     <div class="about">
                         <p><span id="quote">"</span><br>
                         fylo has improved our team productivity by
@@ -80,21 +82,56 @@
                 extremely generous. if you have any quetions, our support team<br>would be happy to help you</p>
              </div>
              <div class="body-container-3-item container-3-contents-2">
-                 <input id="text" type="text">
-                <p> <input id="submit" type="sumbmit" value="Get Started for Free"></p>
+                 <input id="email2" type="email" placeholder="example@email.com">
+                 <input id="submit" type="submit" value="Get Started for Free">
              </div>
 
 
 
          </div>
 
-    
+         <!-- -------------------------------------------------------------------------------->
 
 
+         <!-- Footer Section-->
+         <footer class="footer-container">
+             <div class="footer-container-item container-item-1"> 
+                 <ul>
+                     <li> <img id="logo" src="./resources/images/logo.svg"> </li>
+                     <li> <img id="phone-icon" src="./resources/images/icon-phone.svg"> Phone:+1-543-123-4567</li>
+                     <li><img src="./resources/images/icon-email.svg"> example@fylo.com</li>
+                 </ul>   
 
+             </div>
 
+             <div class="footer-container-item container-item-2"> 
+                 <ul>
+                     <li> <a href="">About Us</a></li>
+                     <li> <a href="">Jobs</a></li>
+                     <li> <a href="">Press</a></li>
+                     <li> <a href="">Blog</a></li>
+                 </ul>   
 
+             </div>
 
+             <div class="footer-container-item container-item-3">   
+                <ul>
+                    <li> <a href="">Contact Us</a></li>
+                    <li> <a href="">Terms</a></li>
+                    <li> <a href="">Privacy</a></li>
+                </ul>    
+
+             </div>
+
+            <div class="footer-container-item container-item-4">    
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+             </div>
+            
+
+         </footer>
 
 
     </body>
