@@ -2,14 +2,15 @@
     margin:0px;
     padding: 0px;
 }
-p{
+body{
     font-family: Arial, Helvetica, sans-serif;
+}
+p{
     font-size: larger;
     font-weight: normal;
 }
 
 h1{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
     font-weight: bold;
 }
@@ -17,25 +18,25 @@ h1{
 /* Header Section styling*/
 .header-container{
     display: flex;
-    margin:24px 50px 0px 50px;
-    align-items: center;
-    margin-bottom: 24px;
-   
+    margin:24px 50px 24px 50px;
+    align-items: center;   
 }
+
 .header-container .img{
     height: 30px;
 }
+
 .links{
     flex-basis: 100%;
     text-align: right;
-   
 }
+
 .links-item{
     padding:20px;
     text-decoration: none;
     color: black;
-    
 }
+
 .header-container .links a:hover{
     opacity:0.5;
 }
@@ -44,10 +45,9 @@ h1{
 /* Body Section 1 Styling */
 .body-container-1{
     display: flex;
-    margin:24px 50px 0px 50px;
+    margin:24px 50px 24px 50px;
     flex-basis: 100%;
     height:300px;
-    margin-bottom: 24px;
 }
 
 .item-1-contents{
@@ -66,6 +66,7 @@ h1{
     width:100%;
     height:300px;
 }
+
 #submit{
     height: 25px;
     width:150px;
@@ -73,16 +74,13 @@ h1{
     background-color: blue;
     color:white;
 }
+
 #email{
     margin-right:15px;
     width:200px;
     height: 25px;
 }
-#error{
-    display: none;
-    font-size: 12px;
-    color:red;
-}
+
 #email:invalid{
     border-color: red;
 }
@@ -99,13 +97,11 @@ h1{
 /* Styling Body content 2*/
 .body-container-2{
     display:flex;
-    margin:24px 0px 0px 0px;
+    margin:55px 0px 55px 0px;
     background-image: url('../images/bg-curve-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    margin-top:55px;
-    margin-bottom: 55px;
 }
 
 .container-2-contents-1{
@@ -115,7 +111,6 @@ h1{
 }
 
 .container-2-contents-2{
-    
     flex-basis:60%;
     padding-top: 50px;
     margin-right:50px;
@@ -136,36 +131,34 @@ h1{
     margin-top:15px;
     display: flex;
     align-items: center;
-
 }
+
 .img-box p{
     padding-left:10px; 
 }
+
 .body-container-2-item .about .img-box span{
     font-weight: bolder;
-   
 }
 
 .body-container-2-item .about .img-box p{
     font-size: 14px;
-
 }
+
 .body-container-2-item .about img{
-    
     border-radius:100%;
     height:50px;
-
 }
+
 .container-2-contents-1 #quote{
     font-size: 25px;
     font-weight: bolder;
-
 }
+
 .container-2-contents-1 a{
     color:green;
     text-decoration: none;
     border-bottom: solid 2px green;
-
 }
 
 .container-2-contents-1 ,.fylolink{
